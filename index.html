@@ -1,0 +1,90 @@
+<!-- ↓↑ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>TaskTracker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ПОДКЛЮЧАЕМ CSS СТИЛИ -->
+    <link rel="stylesheet" href="normalize.css"> <!-- ПОДКЛЮЧАЕМ СБРОС НАСТРОЕК CSS  --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- ПОДКЛЮЧАЕМ ШРИФТЫ -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+            <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓ ВСЁ ЧТО ОТНОСИТСЯ К ШАПКЕ ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+<header class="header"> <!-- display: flex; шапка сайта с логотипом, навигацией и кнопками ggole appstore -->
+    <div class="header__container"> <!-- display: flex; элементы по дефолту в ряд -->
+        <div class="logo">
+            <img src="images/Logo.svg" alt="logo">
+        </div>   
+        <nav class="nav">
+            <a class="nav__link" href="#">Приложение</a>
+            <a class="nav__link" href="#">Возможности</a>
+            <a class="nav__link" href="#">Стоимость</a>
+            <a class="nav__link" href="#">Блог</a>
+            <a class="nav__link" href="#">Контакты</a>
+        </nav>
+        <div class="appstore"> <!--  display: flex; -->
+            <a class="appstore__goog__app-btn" href="#">
+                <img src="images/Google Play Badge.svg" alt="Get it on GooglePlay">
+            </a>
+            <a href="#">
+                <img src="images/App Store Badge.svg" alt="Get it on AppStore">
+            </a>
+        </div>
+    </div>
+</header>
+            <!-- ↑↑↑↑↑↑↑↑↑↑↑ КОНЕЦ ШАПКИ ↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
+
+
+            <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓ Основной контент сайта ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --> 
+
+<main class="main">
+    <div class="main__container">
+        <div class="main__content">
+            
+            <h1 class="main__header">Приложение органайзер</h1>
+            <div class="main__text">
+            <p>Контролируй все свои дела и задачи. Не упускай ничего важного. Заметки, даты и напоминания. Все в одном месте.</p>
+            </div>
+            <a class="main__btn" href="#">Начать пользоваться</a>
+            
+        </div>
+        <div class="main__img">
+            <img src="images/Mock Creative.png" alt="TaskTracker">
+        </div>
+
+    </div>
+</main>
+
+            <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Основной контент сайта ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
+
+
+            <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ подвал сайта ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__cr">
+            <p>© 2024 ТаскТрекер. Все права защищены</p>
+        </div>  
+        <div class="footer__sm">
+            <a class="foot__soc-item" href="#">
+                <img src="images/Instagram.svg" alt="ins">
+            </a>
+            <a class="foot__soc-item" href="#">
+                <img src="images/Dribbble.svg" alt="dr">
+            </a>
+            <a class="foot__soc-item" href="#">
+                <img src="images/Twitter.svg" alt="tw">
+            </a>
+            <a class="foot__soc-item" href="#">
+                <img src="images/Youtube.svg" alt="yt">
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

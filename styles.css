@@ -1,0 +1,156 @@
+/* ↓↑ */
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0; /* убрали отступы */
+    font-family: "JetBrains Mono", monospace; /* подключаем шрифты */
+}
+img{
+    display: block; /* выравниваем текст на логотипе и текста на вигации в одну линию
+    (смотреть .header__container{ align-items: center; ) */
+}
+
+            /* ↓↓↓↓↓↓↓↓↓↓↓ шапка сайта с логотипом, навигацией и кнопками ggole appstore ↓↓↓↓↓↓↓↓↓↓↓ */
+
+
+.header{ /* основной главный контейнер */
+    display: flex;
+    align-items: center; /* выравниваем элементы внутри по центру */
+    height: 73px;
+    border-bottom: 1px solid #e5e9f2; /* тень от шапки */
+}
+.header__container{ /* родитель flex */
+    display: flex;
+    width: 1110px; /* 1110 ширина самого контейнера внтури шапки, по краям отступы */
+    margin: 0 auto;
+    align-items: center; /* выравниваем текст на логотипе и текста на вигации в одну линию */
+
+}
+.logo{
+    margin-right: 40px; /* отступ с права, 40пикс от логотипа до кнопок навигации */
+}
+.nav{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    color: #18191f;
+
+}
+.nav__link{
+    margin-right: 32px; /* отступ между каждой ссылкой меню */
+    text-decoration: none; /* убираем подчеркивание со ссылок */
+    color: #18191f;
+}
+.nav__link:last-child{ /* убрали отступ от последней ссылке в списке (Контакты) */
+    margin-right: 0;
+}
+.nav__link:hover{ /* при наведении цвет ссылки меняется */
+    color: #8c30f5;
+}
+.appstore{
+    display: flex;
+    margin-left: auto; /* разместили слева кнопки google and appstore */
+
+}
+.appstore__goog__app-btn{
+    margin-left: 12px;
+}
+.appstore__goog__app-btn:first-child{ /* убрали отступ слева */
+    margin-left: 0;
+}
+
+
+        /* ↑↑↑↑↑↑↑↑↑↑↑↑↑ шапка сайта с логотипом, навигацией и кнопками ggole appstore ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+
+        /* ↓↓↓↓↓↓↓↓↓↓↓↓↓ основной контент сайта ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+.main{
+
+}
+.main__container{
+    display: flex;
+    width: 1110px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 197px;
+    padding-bottom: 197px;
+
+}
+.main__content{
+    width: 540px;
+    font-size: 18px;
+    color: #18191f;
+}
+.main__img{
+
+}
+.main__header{
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 1.36;
+    color: #18191f;
+}
+.main__btn{
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 62px;
+    background: #8c30f5;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 62px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+.main__btn:hover{
+    opacity: 0.8;
+}
+
+.main__text{
+margin-bottom: 32px;
+}
+
+.main__text p{
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.78;
+}
+
+            /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ основной контент сайта ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+
+            /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ подвал сайта ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 72px;
+    background-color: #0B0D17;
+    color: #d9dbe1;
+}
+.footer__container{
+    display: flex;
+    width: 1110px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: center;
+
+}
+.footer__cr{
+    font-size: 14px;
+}
+
+.footer__sm{
+    display: flex;
+}
+.foot__soc-item{
+    margin-left: 16px;
+}
